@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+   width:white;
+   margin-top: 2%;
+   margin-left: 10%;
+   margin-right: 10%
+}
+
+.nav_bar{
+    /* background-color: cadetblue; */
+    height: 50px;
+    display: flex;
+}
+.nav_route{
+    
+    width: 75%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav_route ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+     
+}
+
+.nav_route li {
+    display: inline;
+    color: #808080; 
+    font-size: 15px;
+    margin: 20px;
+}
+
+.nav_end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:chocolate; */
+    width: 15%;
+}
+
+.main_container{
+    width: 100%;
+    display: flex;
+}
+.left_side{
+    margin-top: 7%;
+    width:60%;
+    /* background-color: cornflowerblue; */
+}
+
+.left_side h1{
+    font-size:75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left_side p{
+    margin-top: 5px;
+    font-size:12px;
+    color:#808080;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: colorAnimation 5s infinite alternate;
+}
+@keyframes colorAnimation {
+    0% { color: #808080; } 
+    50% { color: #FF6700; }
+    100% { color: #808080; } 
+}
+.left_side button{
+    display: inline;
+    all: unset;
+    margin-top: 13px;
+    width: 25%;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.left_side button:hover {
+    background-color: #FF6700;
+    color: white;
+}
+
+#myVideo{
+    border-radius: 10px;
+    border: 3px solid #FF6700;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.left_side_media{
+    display: table-footer-group;
+}
+.right_side{
+    margin-top: 50px;
+    width:40%;
+}
+.right_logo{
+    width: 15%;
+    position: relative;
+    left: 350px;
+}
